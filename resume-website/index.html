@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aditya Pandey</title>
+</head>
+<body>
+<div id="heading-holder">
+    <div id="cloud-heading">
+        <h1>CLOUD RESUME <br> CHALLENGE</h1>
+    </div>
+    <div id="counter">
+        <h2 class="actualCounter"><div class="loader"></div> </h2>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="resume-page">
+        <h1 id="name">ADITYA PANDEY</h1><br>
+        <h3 id="subheading">Cloud Practitioner | IT Student</h3>
+        <hr style="height: 4px; background-color: black;">
+        <h1 class="sub-headings">Skills</h1>
+        <p class="items">Basic Web Development (HTML, CSS, JavaScipt)</p>
+        <p class="items">Programming Languages - Python, JavaScript, Java</p>
+        <p class="items">Linux - Ubuntu | Linux CLI</p>
+        <p class="items">IaC - Terraform</p>
+        <p class="items">Cloud Platform - AWS</p>
+        <p class="sub-items">S3</p>
+        <p class="sub-items">CloudFront</p>
+        <p class="sub-items">Lambda</p>
+        <p class="sub-items">API Gateway</p>
+        <p class="sub-items">NoSQL - DynamoDB</p>
+        <p class="sub-items">IAM</p>
+        <h1 class="sub-headings">Projects</h1>
+        <p class="items">Cloud Resume Challenge - By Forreast Brazeal</p>
+        <p class="sub-items">In this project, I leveraged the different microservices offered by AWS for hosting my resume website. I have built the website using simple web development. Services I used were CloudFront, S3, Lambda, API Gateway, DynamoDB and Route53.</p>
+        <div id="buttonFlex">
+            <a target="_blank" href=""><button id="verifyButton">Github Repository➚</button></a>
+            <a target="_blank" href=""><button id="verifyButton">Medium Post➚</button></a>
+        </div>
+        <h1 class="sub-headings">Education</h1>
+        <p class="items">Pursuing my graduation from KES Shroff College - Mumbai University</p>
+        <p class="sub"></p>
+        <p class="sub-items">2023 - 2025 (Ongoing)</p>
+    </div>
+</div>
+</body>
+<script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const counter = document.querySelector(".actualCounter");
+            async function updateCounter(){
+                try {
+                    let response = await fetch("") //API Gateway Link
+                    let data = await response.json();
+                    console.log('Data:', data);
+                    counter.innerHTML = data;
+                    console.log('Counter innerHTML:', counter.innerHTML);
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+            console.log('Updating counter...');
+            updateCounter();
+        });
+</script>
+</html>

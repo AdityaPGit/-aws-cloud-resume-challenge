@@ -1,0 +1,97 @@
+@font-face{
+    font-family: 'myfont';
+    src: url(futura/FUTURA45LIGHT.TTF) format("tff");
+}
+body{
+    font-family: 'myfont', sans-serif;
+    background-color: #f5f0f6;
+}
+#heading-holder{
+    display: flex;
+    flex-direction: row;
+    position: static;
+}
+#cloud-heading{
+    font-size: 20px;
+    width: 50%;
+}
+#counter{
+    text-align: end;
+    width: 50%;
+}
+#wrapper{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resume-page{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    padding-top: 30px;
+}
+#name{
+    font-size: 40px;
+    margin: 0px;
+}
+#subheading{
+    font-size: 24px;
+    margin: 0px;
+}
+.sub-headings{
+    text-align: left;
+    font-size: 25px;
+}
+.items{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 5px;
+}
+.sub-items{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 40px;
+    margin: 5px;
+}
+#verifyButton{
+    margin-left: 36px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    font-size: 20px;
+}
+#verifyButton:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+a{
+    text-decoration: none;
+}
+#buttonFlex{
+    display: flex;
+}
+/* HTML: */
+.loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
