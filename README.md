@@ -1,8 +1,8 @@
 
 # Cloud Resume Challenge ☁️
 
-The Cloud Resume Challenge is an popular project for people looking to build cloud skills and have something to showcase during job interviews.
-The basic idea is to create a simple resume website hosted completely on AWS services like S3, CloudFront, Route53, etc. The website pulls in your resume information from sources like GitHub or JSON files.
+The <a href="https://cloudresumechallenge.dev/">Cloud Resume Challenge</a> by <a href="https://github.com/forrestbrazeal">Forrest Brazeal</a> is a popular project for getting started with cloud and very beginner friendly.
+The basic idea is to create a simple resume website hosted completely on AWS services like S3, CloudFront, Route53, etc.
 
 
 ## Architecture
@@ -17,26 +17,7 @@ The basic idea is to create a simple resume website hosted completely on AWS ser
 - API Gateway
 - DynamoDB
 
-
-## AWS Services Used
-
-- CloudFront
-- S3 
-- Lambda Function
-- API Gateway
-- DynamoDB
-
-
-## AWS Services Used
-
-- CloudFront
-- S3 
-- Lambda Function
-- API Gateway
-- DynamoDB
-
-
 ## Posts
 
-![Medium](https://github.com/AdityaPGit/-aws-cloud-resume-challenge/blob/main/medium.png)
+<a href="https://medium.com/@19aditya3/cloud-resume-challenge-aws-ede39442acae"><img src="https://github.com/AdityaPGit/-aws-cloud-resume-challenge/blob/main/medium.png" width=200px></a>
 
